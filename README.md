@@ -2,7 +2,7 @@
 Curso Java II - Orientacao a Objeto
 
 
-Aula -- Revisão breve do primeiro curso de POO(Curso Java: Primeiros PassosI), https://github.com/uires/CursoJavaPrimeirosPassosI
+Aula --1 Revisão breve do primeiro curso de POO(Curso Java: Primeiros PassosI), https://github.com/uires/CursoJavaPrimeirosPassosI
 
 Aula --2 Herança, reescrita e polimorfismo
 
