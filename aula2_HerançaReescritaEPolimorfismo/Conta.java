@@ -51,7 +51,7 @@ class ContaCorrente extends Conta{
 }
 
 
-class ContaPoucanca extends Conta{
+class ContaPoupanca extends Conta{
 
 	public void atualiza(double taxa){
 
@@ -61,6 +61,11 @@ class ContaPoucanca extends Conta{
 
 }
 
+class AtualizadorDeContas extends Conta{
+
+	
+
+}
 
 
 
@@ -70,23 +75,23 @@ class ContaPoucanca extends Conta{
 
 class Programa{
 	public static void main (String[] args){
+		
 
-		Conta joao = new Conta();
-		joao.setSaldo(3000.0);
-		System.out.println("R$ " + joao.getSaldo());	
+		Conta c = new Conta();
+		Conta cc = new ContaCorrente();
+		Conta cp = new ContaPoupanca();
 
+        c.deposita(1000); 
+        cc.deposita(1000); 
+        cp.deposita(1000);
 
+        c.atualiza(0.01);
+        cc.atualiza(0.01);
+        cp.atualiza(0.01);
 
-		joao.atualiza(0.2	);
-
-		System.out.println("R$ " + joao.getSaldo());
-
-		ContaCorrente luiz = new ContaCorrente();
-
-		luiz.setSaldo(3000.0);
-		luiz.atualiza(0.2);
-		System.out.println(luiz.saldo);
-
+        System.out.println(c.getSaldo());
+        System.out.println(cc.getSaldo());
+        System.out.println(cp.getSaldo());
 
 
 
