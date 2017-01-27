@@ -1,7 +1,8 @@
 public class ContaPoupanca extends Conta {
 
-	public void getBonus() {
+	public double getBonus() {
 		
+		return this.saldo += this.saldo * 0.2;
 		
 	}
 

@@ -11,7 +11,7 @@ abstract class Conta {
 
 	//public abstract void atualiza(double taxa);
 
-	public abstract void getBonus();
+	public abstract double getBonus();
 
 	public String getNome() {
 		return nome;
@@ -38,7 +38,7 @@ abstract class Conta {
 
 	public void imprime() {
 
-		System.out.println(this.getSaldo());
+		System.out.println(getBonus());
 		System.out.println(this.getNome());
 
 	}

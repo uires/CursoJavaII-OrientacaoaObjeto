@@ -12,7 +12,8 @@ public class ContaCorrente extends Conta {
 	}
 
 
-	public void getBonus() {
+	public double getBonus() {
+		return this.saldo;
 		
 	}
 
