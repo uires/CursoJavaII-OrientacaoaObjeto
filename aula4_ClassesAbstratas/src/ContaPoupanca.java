@@ -1,0 +1,14 @@
+public class ContaPoupanca extends Conta {
+
+	public void getBonus() {
+		
+		
+	}
+
+	public void atualiza(double taxa) {
+		
+		this.saldo = this.saldo + (this.saldo * taxa);
+		
+	}
+
+}
