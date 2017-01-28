@@ -7,7 +7,7 @@ public class Circulo implements interfaces {
 	}
 
 	public double calculaArea() {
-	
-		return this.raio * 2;
+				
+		return/*poderia ser Math.pi*/ this.raio * 2 * 2;
 	}
 }
