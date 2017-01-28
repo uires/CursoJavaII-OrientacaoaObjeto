@@ -1,5 +1,5 @@
 
-public class AreaCalculavel {
+public class TestaClasses {
 
 	/**
 	 * @param args

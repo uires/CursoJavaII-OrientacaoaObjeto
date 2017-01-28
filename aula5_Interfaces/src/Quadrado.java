@@ -4,7 +4,7 @@ public class Quadrado implements interfaces {
 	public void quadradoCal(int lado){
 		this.lado = lado;
 	}
-	public double calcula(){
+	public double calculaArea(){
 		return this.lado * this.lado;
 	}
 }
