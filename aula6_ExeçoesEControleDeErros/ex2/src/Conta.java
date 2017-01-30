@@ -1,4 +1,3 @@
-
 public class Conta {
 	private String nome;
 	private double saldo;
@@ -31,7 +30,7 @@ public class Conta {
 	public void deposita(double valor) throws ValorInvalidoException {
 		if (valor < 0) {
 			throw new ValorInvalidoException(valor);
-		}else{
+		} else {
 			this.saldo += valor;
 			System.out.println("Deposito efetuado: -- R$" + this.saldo);
 		}
