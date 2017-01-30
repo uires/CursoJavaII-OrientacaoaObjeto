@@ -1,7 +1,7 @@
 
 public class Conta {
 	private String nome;
-	private double saldo;
+	protected double saldo;
 	private int agencia;
 	private String numeroTelefone;
 	
@@ -30,9 +30,5 @@ public class Conta {
 		this.numeroTelefone = numeroTelefone;
 	}
 
-	
-	public void saca(double saca){
-		this.saldo -= saca;
-	}
 	
 }

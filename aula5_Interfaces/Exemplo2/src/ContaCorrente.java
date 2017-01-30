@@ -5,5 +5,11 @@ public class ContaCorrente extends Conta implements Tributavel {
 		return this.getSaldo() * 0.01;
 	}
 
+	public void deposita(double d) {
+	
+		this.saldo += d;
+		
+	}
+
 	
 }
