@@ -28,9 +28,9 @@ public class Conta {
 		this.agencia = agencia;
 	}
 
-	public void deposita(double valor) {
+	public void deposita(double valor) throws ValorInvalidoException {
 		if (valor < 0) {
-			throw new ValorInvalidoException();
+			throw new ValorInvalidoException(valor);
 		}else{
 			this.saldo += valor;
 			System.out.println("Deposito efetuado: -- R$" + this.saldo);
