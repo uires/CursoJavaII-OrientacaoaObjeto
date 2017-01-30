@@ -1,6 +1,5 @@
 
-
-public class Conta{
+public class Conta {
 	private String nome;
 	private double saldo;
 	private int agencia;
@@ -29,9 +28,12 @@ public class Conta{
 		this.agencia = agencia;
 	}
 
-	public void deposita(double saldo) {
-		this.saldo += saldo;
-		System.out.println("Depositov efetuado: -- R$" + this.saldo);	
+	public void deposita(double valor) {
+		if (valor < 0) {
+			throw new IllegalArgumentException();
+		}else{
+			this.saldo += valor;
+			System.out.println("Deposito efetuado: -- R$" + this.saldo);
+		}
 	}
-
 }
