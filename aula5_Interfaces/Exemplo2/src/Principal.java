@@ -8,11 +8,12 @@ public class Principal {
 		gerenciador.adcionaTributaveis(sv);
 			
 		ContaCorrente cc = new ContaCorrente();
+		cc.setSaldo(30034.1);
 		cc.deposita(1000.1);
 		
 		gerenciador.adcionaTributaveis(cc);
 		
-		System.out.println(gerenciador.getTotal());
+		System.out.printf("O seu saldo é: R$ %.2f",cc.getSaldo());
 		
 		
 	}

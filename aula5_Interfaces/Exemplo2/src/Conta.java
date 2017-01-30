@@ -12,7 +12,7 @@ public class Conta {
 		this.nome = nome;
 	}
 	public double getSaldo() {
-		return saldo;
+		return this.saldo;
 	}
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
