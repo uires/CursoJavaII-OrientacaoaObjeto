@@ -31,4 +31,8 @@ public class Conta {
 	}
 
 	
+	public void saca(double saca){
+		this.saldo -= saca;
+	}
+	
 }
