@@ -5,7 +5,7 @@ public class Principal {
 		c.setSaldo(302.1);
 		try{
 			c.deposita(-1);
-		}catch(IllegalArgumentException e){
+		}catch(ValorInvalidoException e){
 			System.out.println("Valor de depósito inválido : " + e);
 		}
 		

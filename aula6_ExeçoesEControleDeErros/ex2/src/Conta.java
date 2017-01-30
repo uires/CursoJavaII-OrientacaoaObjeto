@@ -30,7 +30,7 @@ public class Conta {
 
 	public void deposita(double valor) {
 		if (valor < 0) {
-			throw new IllegalArgumentException();
+			throw new ValorInvalidoException();
 		}else{
 			this.saldo += valor;
 			System.out.println("Deposito efetuado: -- R$" + this.saldo);
